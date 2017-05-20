@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from core.views import IndexView
+from django.conf.urls.static import static
+from django.conf import settings
+
+
+admin.site.site_title = "Bruno Sousa - Fotografias"
+admin.site.site_header = "Bruno Sousa - Fotografias"
+admin.site.index_title = 'Painel administrativo do site'
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-]
+    url(r'^$', IndexView.as_view(), name='index'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
