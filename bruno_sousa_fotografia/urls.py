@@ -1,4 +1,4 @@
-"""bruno_souza_fotografias URL Configuration
+"""bruno_sousa_fotografia URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -20,8 +20,8 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 
-admin.site.site_title = "Bruno Sousa - Fotografias"
-admin.site.site_header = "Bruno Sousa - Fotografias"
+admin.site.site_title = "Bruno Sousa - Fotografia"
+admin.site.site_header = "Bruno Sousa - Fotografia"
 admin.site.index_title = 'Painel administrativo do site'
 
 urlpatterns = [

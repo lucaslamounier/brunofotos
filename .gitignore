@@ -1,6 +1,7 @@
 *.pyc
 core/__pycache__/*
 content/__pycache__/*
+bruno_sousa_fotografia/__pycache__/*
 db.*
 media/*
 local_settings.py
