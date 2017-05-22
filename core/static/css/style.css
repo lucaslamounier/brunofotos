@@ -162,7 +162,7 @@ p.bottom_desc{
 	width: 216px;
 	height: 80px;
 	display: inline-block;
-	background: url(../images/logo_small.png) no-repeat 0px 5px;
+	background: url(../images/logo_bs_small.png) no-repeat 0px 5px;
 	vertical-align: middle;
 }
 .navbar-nav li.active a, .navbar-nav li.hover a{
