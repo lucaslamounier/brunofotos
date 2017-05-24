@@ -1,0 +1,14 @@
+# INSTALAÇÃO
+
+realize a instalação do ambiente virtual python
+
+http://virtualenvwrapper.readthedocs.io/en/latest/install.html
+
+# mkvirtualenv -p python3.6 env 
+
+# pip install -r requeriments.txt
+
+# para executar o programa em ambiente de desenvolvimeto
+
+# python manage.py runserver
+
