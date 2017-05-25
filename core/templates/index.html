@@ -3,33 +3,33 @@
 
 <html lang="pt-br">
 <head>
-	<!-- ################################################  -->
-    <!-- #                                              #  -->
-    <!-- # WEBSITE DESENVOLVIDO POR LUCASLAMOUNIER      #  -->
-    <!-- #                                              #  -->
-    <!-- ################################################  -->
-<title>Bruno Sousa - Fotografia | Brasília DF</title>
-<!-- <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
-<script src="{% static 'js/jquery.min.js' %}"></script>
--->
-<link href="{% static 'css/bootstrap.min.css'%}" rel='stylesheet' type='text/css' />
+		<!-- ################################################  -->
+		<!-- #                                              #  -->
+		<!-- # WEBSITE DESENVOLVIDO POR LUCASLAMOUNIER      #  -->
+		<!-- #                                              #  -->
+		<!-- ################################################  -->
+	<title>Bruno Sousa - Fotografia | Brasília DF</title>
+	<!-- <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
+	<link href="{% static 'css/bootstrap.min.css'%}" rel='stylesheet' type='text/css' />
+	<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript">
+			addEventListener("load", function() {
+						setTimeout(hideURLbar, 0);
+					}, false);
 
-<script type="application/x-javascript">
-	addEventListener("load", function() {
-		setTimeout(hideURLbar, 0);
-	}, false);
-
-	function hideURLbar(){
-		window.scrollTo(0,1);
-	};
-</script>
-<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
-<script src="{% static 'js/easing.js' %}"></script>
-<script type="text/javascript" 	src="{% static 'js/jquery.smint.js' %}"></script>
+					function hideURLbar(){
+						window.scrollTo(0,1);
+					};
+	</script>
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.smint.js' %}"></script>
 
 </head>
 <body>
@@ -37,9 +37,9 @@
 			$(document).ready( function() {
 
 				// submenu
-			    //$('.subMenu').smint({
-			    //	'scrollSpeed' : 1000
-			    //});
+			    $('.subMenu').smint({
+			    	'scrollSpeed' : 1000
+			    });
 
 				// show more
 				var itemsCount = 0,
@@ -71,55 +71,70 @@
 
 			});
 		</script>
-	 <div class="header" id="home">
-		<!-- <div class="logo">
+
+		<!-- <div class="logo"> class="header"
 			<a href="index.html"><img src="{% static 'images/logo_bs.png' %}" alt=""/></a>
 		</div> -->
 
-	 <!-- start carrousel -->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="{% static 'images/bruno01.jpg' %}" height="800px" alt="Los Angeles" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="{% static 'images/bruno02.jpg' %}" height="800px" alt="Chicago" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="{% static 'images/02.jpg' %}" height="800px" alt="New york" style="width:100%;">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="{% static 'images/logo_bs.png' %}" alt=""/></a>
+		</div>
+	    <div class="slider_container sTop">
+  		<div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+				   <article style="position: absolute; width: 100%; opacity: 0;">
+				   	 <div class="banner-wrap">
+				   		 <div class="slider-left">
+						    <h1>Eventos</h1>
+							<p class="top_desc">Registramos todos os seus melhores eventos.</p>
+							<!--<p class="bottom_desc">- imperdiet doming</p>-->
+						 </div>
+					 </div>
+					</article>
+				   <article style="position: relative; width: 100%; opacity: 1;">
+				   	 <div class="banner-wrap">
+				   		 <div class="slider-left">
+						    <h1>Casamentos</h1>
+							<p class="top_desc">Sempre busco dar além do meu melhor, pois quero viver junto com o casal de forma intensa e verdadeira essa experiência única.</p>
+							<!--<p class="bottom_desc">- imperdiet doming</p>-->
+						 </div>
+					 </div>
+				   </article>
+				   <article style="position: absolute; width: 100%; opacity: 0;">
+				   	 <div class="banner-wrap">
+				   		 <div class="slider-left">
+						    <h1>Aniversário infantil</h1>
+							<p class="top_desc">Caímos de cabeça no mundo mágico das crianças!</p>
+							<!--<p class="bottom_desc">- imperdiet doming</p>-->
+						 </div>
+					 </div>
+				   </article>
+				</div>
+                <ul class="wmuSliderPagination">
+                	<li><a href="#" class="">0</a></li>
+                	<li><a href="#" class="">1</a></li>
+                	<li><a href="#" class="">2</a></li>
+                </ul>
+				<!--<a class="btn2" href="#portfolio">-->
+					<!--<div class="header_btn"><span>TRABALHOS</span></div>-->
+				<!--</a>-->
+              </div>
+              <script src="{% static 'js/jquery.wmuSlider.js' %}"></script>
+				 <script>
+       			   $('.example1').wmuSlider();
+   			     </script>
+   	     </div>
 	</div>
+
 
 
 	<nav class="subMenu navbar-custom navbar-scroll-top smint" role="navigation" style="position: absolute; top: 737px;">
 	        <div class="container">
 	            <div class="navbar-header page-scroll">
 	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-main-collapse">
-	                    <img src="images/nav-icon.png" title="drop-down-menu">
+	                    <img src="{% static 'images/nav-icon.png' %}" title="drop-down-menu">
 	                </button>
 	            </div>
 	            <!-- Collect the nav links, forms, and other content for toggling -->
@@ -127,20 +142,20 @@
 	                <ul class="nav navbar-nav">
 	                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 	                     <li class="active">
-	                        <a id="sTop" class="subNavBtn active" href="#home" style="color: black;">Home</a>
+	                        <a id="sTop" class="subNavBtn active" href="#home" style="color: black;">Início</a>
 	                    </li>
 	                    <li class="page-scroll">
 	                        <a id="s1" class="subNavBtn" href="#portfolio">Portfolio</a>
 	                    </li>
-						<!--
-	                    <li class="page-scroll">
+
+	                    <li class="page-scroll" style="display: none;">
 	                        <a id="s2" class="subNavBtn" href="#">Services</a>
 	                    </li>
-	                    <li class="page-scroll">
+	                    <li class="page-scroll" style="display: none;">
 	                        <a id="s3" class="subNavBtn" href="#">Sign Up</a>
-	                    </li> -->
+	                    </li>
 	                   <li class="page-scroll">
-	                        <a id="s4" class="subNavBtn" href="about">O PROFISSIONAL</a>
+	                        <a id="s4" class="subNavBtn" href="#about">O PROFISSIONAL</a>
 	                    </li>
 	                    <li class="page-scroll">
 	                        <a id="s5" class="subNavBtn" href="#contact">CONTATO</a>
@@ -163,7 +178,7 @@
 										 <img src="{% static 'images/p_logo.png' %}" class="img-responsive" alt=""/>
 										 <span>Título do album</span>
 										 <button>Ver Foto</button>
-										 <label> <i class="heart"> </i>21</label>
+										 <label><i class="heart"> </i>21</label>
 										</h2>
 									</div>
 								</a>
@@ -174,8 +189,8 @@
 									<div class="b-wrapper">
 									   <h2 class="b-animate b-from-left    b-delay03 ">
 										 <img src="{% static 'images/p_logo.png' %}" class="img-responsive" alt=""/>
-										 <span>Shutter Project title</span>
-										 <button>View photo</button>
+										 <span>Título do album</span>
+										 <button>Ver Foto</button>
 										 <label> <i class="heart"> </i>21</label>
 										</h2>
 									</div>
@@ -185,7 +200,7 @@
 								<a href="#" class="b-link-stripe b-animate-go  thickbox">
 								<img src="{% static 'images/p3.jpg' %}" class="img-responsive" alt=""/>
 									<div class="b-wrapper">
-									   <h2 class="b-animate b-from-left    b-delay03 ">
+									   <h2 class="b-animate b-from-left  b-delay03">
 										 <img src="{% static 'images/p_logo.png' %}" class="img-responsive" alt=""/>
 										  <span>Título do album</span>
 										 <button>Ver Foto</button>
@@ -321,7 +336,7 @@
 		</div>
    </div>
    <div class="portfolio_bottom">
-   	 <a class="btn3" href="#" id="showMore"><span>MAIS</span></a>
+   	 <a class="btn3" href="#" id="showMore"><span>VER MAIS</span></a>
 
    </div>
 
@@ -362,7 +377,7 @@
    				<div class="about-grid text-center">
    				  <img src="{% static 'images/b04.jpg' %}" class="img-responsive" alt=""/>
    				  <h3><a href="#">Bruno Sousa Dias<br></a></h3>
-   				  <p>diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation </p>
+   				  <p>Sou dedicado a registrar com profissionalismo, qualidade e delicadeza os momentos mais especiais, únicos e inesquecíveis.</p>
    				</div>
    			</div>
    		</div>
@@ -372,8 +387,7 @@
    			<div class="row">
    				<div class="col-md-8 contact_left">
    					<h3>Contato</h3>
-   					<p class="m_6">Registramos todos os seus melhores momentos, como: casamentos, festas de aniversário e outros.</p>
-   					<p class="m_7"></p>
+   					<p class="m_7">Prezado cliente, se você chegou até aqui e gostou do meu estilo de trabalho, terei a maior satisfação em contar a história do seu grande dia através das fotografias.</p>
    					<ul class="contact_info">
 			  	<li><i class="mobile"> </i><span>Telefone: +55-61-98668-5257</span></li>
 			  	<li><i class="message"> </i><span class="msg">bruno.sousa.d@gmail.com</span></li>
