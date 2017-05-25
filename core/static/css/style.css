@@ -15,8 +15,9 @@ body a{
 	-ms-transition:0.5s all;
 }
 .header{
-	background:url(../images/bg.png);
+	/*background:url(../images/bg.png); */
 	min-height:819px;
+	max-height:819px;
 }
 .logo{
 	text-align: center;
